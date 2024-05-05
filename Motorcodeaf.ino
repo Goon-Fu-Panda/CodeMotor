@@ -23,7 +23,7 @@ void loop()
 
       delay(2); //2 ms delay krijgt die na elke loop, zorgt er voor dat die of rustig optrekt of rustig afremt 
     }
-    for (int speed = 250; speed >= 0; speed--) //Door deze for loop remt hij weer af.
+    for (int speed = 250; speed >= 0; speed--) //door de loop versneld de motoren zich tot het aangegeven snelheid
     {
       motors.setLeftSpeed(speed); // hier mee zorg je dat de linker motor de setSpeed krijgt 
 
@@ -44,7 +44,7 @@ void loop()
 
       delay(2); //2 ms delay krijgt die na elke loop, zorgt er voor dat die of rustig optrekt of rustig afremt
     }
-    for (int speed = -250; speed >= 0; speed++) // Door deze loop remt hij weer af.
+    for (int speed = -250; speed >= 0; speed++) //door de loop versneld de motoren zich tot het aangegeven snelheid
     {
       motors.setLeftSpeed(speed); // hier mee zorg je dat de linker motor de setSpeed krijgt 
 
