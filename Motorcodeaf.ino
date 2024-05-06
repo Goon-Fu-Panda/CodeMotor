@@ -36,7 +36,7 @@ void loop()
   //achteruit rijden
   else if (buttonB.isPressed()) // wanneer je button B inklikt
   {
-    for (int speed = 0; speed <= -250; speed--) // Door deze loop versnellen de motoren van 0 naar een speed value van 400. Waardoor de robot vooruit rijd
+    for (int speed = 0; speed >= -250; speed--) // Door deze loop versnellen de motoren van 0 naar een speed value van 400. Waardoor de robot vooruit rijd
     {
       motors.setLeftSpeed(speed); // hier mee zorg je dat de linker motor de setSpeed krijgt 
 
@@ -44,7 +44,7 @@ void loop()
 
       delay(2); //2 ms delay krijgt die na elke loop, zorgt er voor dat die of rustig optrekt of rustig afremt
     }
-    for (int speed = -250; speed >= 0; speed++) //door de loop versneld de motoren zich tot het aangegeven snelheid
+    for (int speed = -250; speed <= 0; speed++) //door de loop versneld de motoren zich tot het aangegeven snelheid
     {
       motors.setLeftSpeed(speed); // hier mee zorg je dat de linker motor de setSpeed krijgt 
 
